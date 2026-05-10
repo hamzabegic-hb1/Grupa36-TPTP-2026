@@ -1,7 +1,7 @@
 /* CSS VARIJABLE */
 :root {
     /* Ovdje sam definisao globalne varijable za boje i stil da ne moram svuda ponavljati iste vrijednosti. */
-    /* ChatGPT mi je pomogao oko boja koja ce biti na stranici
+    /* ChatGPT mi je pomogao oko boja koja ce biti na stranici */
     --primary: #0d6efd;      /* glavna boja (plava) */
     --secondary: #198754;    /* druga boja (zelena) */
     --accent: #ffc107;       /* naglašena boja (žuta) */
@@ -12,6 +12,7 @@
     --radius: 12px;         
     --transition: 0.3s ease; 
 }
+
 /*  RESET */
 * {
     /* Reset sam koristio da uklonim default razmake koje browser automatski stavlja i ovdje mi je ChatGPT predložio da ovo ubacim */
@@ -22,6 +23,7 @@
     box-sizing: border-box;
        
 }
+
 body {
     /* Ovdje sam definisao osnovni font, boju i izgled cijele stranice. */
 
@@ -37,6 +39,7 @@ body {
     line-height: 1.6;
     /* razmak između linija teksta */
 }
+
 .container {
     width: 90%;
 
@@ -51,6 +54,7 @@ header {
 
     padding: 15px 0;
 }
+
 .header-content {
     display: flex;
     /* uključuje FLEX — raspored elemenata u redu */
@@ -66,7 +70,6 @@ header {
     display: flex;
 
     align-items: center;
-
 
     gap: 10px;
 }
@@ -167,8 +170,8 @@ nav li:hover a {
 
 /*  ANIMACIJA */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px);} /* početak */
-    to { opacity: 1; transform: translateY(0);} /* kraj */
+    from { opacity: 0; transform: translateY(20px);} 
+    to { opacity: 1; transform: translateY(0);} 
 }
 
 .hero-content {
@@ -228,12 +231,12 @@ nav li:hover a {
 
 /*  TABLE */
 .table-container {
-    overflow-x: auto; /* scroll */
+    overflow-x: auto; 
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; /* spajanje linija */
+    border-collapse: collapse; 
 }
 
 thead {
@@ -247,7 +250,7 @@ th, td {
 }
 
 tbody tr:nth-child(even) {
-    background: #f2f2f2; /* svaki drugi red */
+    background: #f2f2f2; 
 }
 
 tbody tr:hover {
@@ -313,12 +316,10 @@ footer p {
 }
 
 /*  RESPONSIVE */
-
-/*  MOBITEL */
 @media (max-width: 600px) {
 
     .header-content {
-        flex-direction: column; /* vertikalno */
+        flex-direction: column; 
         gap: 10px;
     }
 
@@ -336,35 +337,22 @@ footer p {
     }
 }
 
-/*  TABLET */
 @media (min-width: 600px) and (max-width: 900px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/*  DESKTOP */
 @media (min-width: 900px) {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/*  GALERIJA */
-.image-placeholder {
-    height: 150px;
-    background: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--radius);
-    color: #555;
-}
-
 /*  DARK MODE */
 body.dark-mode {
-    --light: #121212; /* tamna pozadina */
-    --text: #f1f1f1; /* svijetli tekst */
+    --light: #121212; 
+    --text: #f1f1f1; 
 }
 
 body.dark-mode .section {
@@ -378,9 +366,7 @@ body.dark-mode tbody tr:nth-child(even) {
 body.dark-mode tbody tr:hover {
     background: #3a3a3a;
 }
+
 body.dark-mode .section p {
-    background: #1e1e1e;
-}
-body.dark-mode .section .image-placeholder {
     background: #1e1e1e;
 }
