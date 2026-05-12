@@ -4,210 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Fudbalska liga BiH</title>
-
     <link rel="stylesheet" href="css/tptpstil.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="container header-content">
 
-        <div class="container">
+        <div class="brand">
+            <img src="https://www.nfsbih.ba/templates/nfsbih2/images/logo.png" alt="Logo Nogometnog saveza BiH" style="width: 120px;">
+            <h1>Fudbalska liga Bosne i Hercegovine</h1>
+        </div>
 
-            <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="sadrzaj.html">Sadržaj</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
 
-                <div class="brand">
-
-                    <img src="https://www.nfsbih.ba/templates/nfsbih2/images/logo.png" alt="Logo Nogometnog saveza BiH" style="width: 120px;">
-
-                    <h1>Fudbalska liga Bosne i Hercegovine</h1>
-
-                </div>
-
-                <nav>
-
-                    <ul>
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="sadrzaj.html">Sadržaj</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-
-                </nav>
-
-                <div class="auth-buttons">
-
-                    <a href="#" id="loginBtn">Prijava</a>
-
-                    <a href="#" id="registerBtn">Registracija</a>
-
-                    <button id="darkModeToggle">🌙</button>
-
-                </div>
-
-            </div>
-
+        <div class="auth-buttons">
+            <a href="#" id="loginBtn">Prijava</a>
+            <a href="#" id="registerBtn">Registracija</a>
+            <button id="darkModeToggle">🌙</button>
         </div>
 
     </header>
 
     <main>
 
-        <section class="hero">
+<section class="hero hero-content">
+    <h1>Fudbalska liga BiH</h1>
+    <p>Službeni portal Premijer lige Bosne i Hercegovine</p>
+</section>
 
-            <div class="hero-content">
-
-                <h1>Fudbalska liga BiH</h1>
-
-                <p>Službeni portal Premijer lige Bosne i Hercegovine</p>
-
-            </div>
-
-        </section>
 
         <section class="section">
-
             <h2 class="section-title">Trenutna tabela</h2>
 
-            <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Poz</th>
+                        <th>Klub</th>
+                        <th>P</th>
+                        <th>N</th>
+                        <th>I</th>
+                        <th>Bod</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>FK Borac</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>2</td><td>FK Sarajevo</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>3</td><td>FK Željezničar</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>4</td><td>FK Velež</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>5</td><td>HŠK Zrinjski</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>6</td><td>NK Široki Brijeg</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>7</td><td>NK Radnik Bijeljina</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>8</td><td>FK Sloga Doboj</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>9</td><td>FK Rudar Prijedor</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td>10</td><td>HŠK Posušje</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                </tbody>
+            </table>
+        </section>
 
-                <table>
+ <section class="section">
+    <h2 class="section-title">Članovi grupe</h2>
 
-                    <thead>
+    <div class="clanovi">
+        <article class="clan-card">
+            <img src="images/hamza_begic.jpg" alt="Hamza Begić">
+            <h3>Hamza Begić</h3>
+            <p>CSS i dizajn</p>
+        </article>
 
-                        <tr>
-                            <th>Poz</th>
-                            <th>Klub</th>
-                            <th>P</th>
-                            <th>N</th>
-                            <th>I</th>
-                            <th>Bod</th>
-                        </tr>
+        <article class="clan-card">
+            <img src="images/haris_barakovic.jpg" alt="Haris Baraković">
+            <h3>Haris Baraković</h3>
+            <p>HTML i struktura</p>
+        </article>
 
-                    </thead>
-
-                    <tbody>
-
-    <tr>
-        <td>1</td>
-        <td>FK Borac</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>2</td>
-        <td>FK Sarajevo</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>3</td>
-        <td>FK Željezničar</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>4</td>
-        <td>FK Velež</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>5</td>
-        <td>HŠK Zrinjski</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>6</td>
-        <td>NK Široki Brijeg</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>7</td>
-        <td>NK Radnik Bijeljina</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>8</td>
-        <td>FK Sloga Doboj</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>9</td>
-        <td>FK Rudar Prijedor</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>10</td>
-        <td>HŠK Posušje</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-
-</tbody>
-
-                </table>
-
-            </div>
-
+        <article class="clan-card">
+            <img src="images/hamza_jusufovic.png" alt="Hamza Jusufović">
+            <h3>Hamza Jusufović</h3>
+            <p>JavaScript</p>
+        </article>
+    </div>
 </section>
+
+
     </main>
 
     <footer>
-
-        <div class="footer-socials">
-
+        <nav class="footer-socials">
             <a href="#" id="FB">FB</a>
-
             <a href="#" id="X">TW</a>
-
             <a href="#" id="IG">IG</a>
-
             <a href="#" id="YT">YT</a>
-
-        </div>
-
+        </nav>
         <p>© 2026 Fudbalska liga Bosne i Hercegovine. Sva prava zadržana.</p>
-
     </footer>
 
     <script src="js/tptpskripte.js"></script>
 
 </body>
-
 </html>
