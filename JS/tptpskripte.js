@@ -24,23 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.card');
-
-    if (filterButtons.length > 0 && cards.length > 0) {
-        filterButtons.forEach(function (button) {
-            button.addEventListener('click', function (e) {
-                e.preventDefault();
-                const category = button.getAttribute('data-category');
-
-                cards.forEach(function (card) {
-                    const cardCategory = card.getAttribute('data-category');
-                    card.style.display = category === 'all' || category === cardCategory ? 'block' : 'none';
-                });
-            });
-        });
-    }
-
     // Ovaj dio je urađen uz pomoć AI alata.
     // Klik na ime kluba polako skroluje do stadiona
     // i privremeno označi odabrani stadion zelenom bojom na 4.5 sekundi.
