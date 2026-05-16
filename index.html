@@ -1,100 +1,237 @@
 <!DOCTYPE html>
 <html lang="bs">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fudbalska liga BiH</title>
     <link rel="stylesheet" href="css/tptpstil.css">
 </head>
-
 <body>
 
     <header class="container header-content">
-
-        <div class="brand">
-            <img src="https://www.nfsbih.ba/templates/nfsbih2/images/logo.png" alt="Logo Nogometnog saveza BiH" style="width: 120px;">
+        <section class="brand">
+            <img src="https://www.nfsbih.ba/templates/nfsbih2/images/logo.png" alt="Logo Nogometnog saveza BiH" style="width:120px;">
             <h1>Fudbalska liga Bosne i Hercegovine</h1>
-        </div>
-
+        </section>
         <nav>
             <ul>
                 <li><a href="index.html">Početna</a></li>
-                <li><a href="sadrzaj.html">Sadržaj</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
             </ul>
         </nav>
-
-        <div class="auth-buttons">
-            <a href="#" id="loginBtn">Prijava</a>
-            <a href="#" id="registerBtn">Registracija</a>
-            <button id="darkModeToggle">🌙</button>
-        </div>
-
+        <section class="auth-buttons">
+            <button type="button" id="loginBtn">Prijava</button>
+            <button type="button" id="registerBtn">Registracija</button>
+            <button id="darkModeToggle" type="button">🌙</button>
+        </section>
     </header>
 
     <main>
 
-<section class="hero hero-content">
-    <h1>Fudbalska liga BiH</h1>
-    <p>Službeni portal Premijer lige Bosne i Hercegovine</p>
-</section>
+        <section class="hero hero-content">
 
-
-        <section class="section">
-            <h2 class="section-title">Trenutna tabela</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Poz</th>
-                        <th>Klub</th>
-                        <th>P</th>
-                        <th>N</th>
-                        <th>I</th>
-                        <th>Bod</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>FK Borac</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>2</td><td>FK Sarajevo</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>3</td><td>FK Željezničar</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>4</td><td>FK Velež</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>5</td><td>HŠK Zrinjski</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>6</td><td>NK Široki Brijeg</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>7</td><td>NK Radnik Bijeljina</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>8</td><td>FK Sloga Doboj</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>9</td><td>FK Rudar Prijedor</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td>10</td><td>HŠK Posušje</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-                </tbody>
-            </table>
+        <section class="animated-logo-section">
+            <img class="animated-league-logo"
+                 src="https://www.nfsbih.ba/templates/nfsbih2/images/logo.png"
+                 alt="Logo Fudbalske lige Bosne i Hercegovine">
         </section>
 
- <section class="section">
-    <h2 class="section-title">Članovi grupe</h2>
+            <h1>Fudbalska liga BiH</h1>
+            <p>Službeni portal Premijer lige Bosne i Hercegovine</p>
+        </section>
 
-    <div class="clanovi">
-        <article class="clan-card">
-            <img src="images/hamza_begic.jpg" alt="Hamza Begić">
-            <h3>Hamza Begić</h3>
-            <p>CSS i dizajn</p>
-        </article>
+        
+<section class="section container table-section">
+                    <!-- Chatgpt generisao tabelu -->
+                    <h2 class="section-title">Trenutna tabela</h2>
+                    <table>
+                        <thead>
+                            <tr><th>Poz</th><th>Klub</th><th>P</th><th>N</th><th>I</th><th>Bod</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td><img src="images/borac.png" alt="FK Borac logo" class="tabela-logo"> FK Borac</td><td>25</td><td>4</td><td>4</td><td>79</td></tr>
+                            <tr><td>2</td><td><img src="images/sarajevo.png" alt="FK Sarajevo logo" class="tabela-logo"> FK Sarajevo</td><td>17</td><td>7</td><td>9</td><td>58</td></tr>
+                            <tr><td>3</td><td><img src="images/zrinjski.png" alt="HŠK Zrinjski logo" class="tabela-logo"> HŠK Zrinjski</td><td>20</td><td>6</td><td>7</td><td>66</td></tr>
+                            <tr><td>4</td><td><img src="images/velez.png" alt="FK Velež logo" class="tabela-logo"> FK Velež</td><td>13</td><td>9</td><td>11</td><td>48</td></tr>
+                            <tr><td>5</td><td><img src="images/zeljeznicar.png" alt="FK Željezničar logo" class="tabela-logo"> FK Željezničar</td><td>10</td><td>11</td><td>12</td><td>41</td></tr>
+                            <tr><td>6</td><td><img src="images/siroki.png" alt="NK Široki Brijeg logo" class="tabela-logo"> NK Široki Brijeg</td><td>10</td><td>10</td><td>13</td><td>40</td></tr>
+                            <tr><td>7</td><td><img src="images/radnik.png" alt="NK Radnik Bijeljina logo" class="tabela-logo"> NK Radnik Bijeljina</td><td>8</td><td>9</td><td>16</td><td>33</td></tr>
+                            <tr><td>8</td><td><img src="images/posusje.png" alt="HŠK Posušje logo" class="tabela-logo"> HŠK Posušje</td><td>8</td><td>9</td><td>16</td><td>33</td></tr>
+                            <tr><td>9</td><td><img src="images/prijedor.png" alt="FK Rudar Prijedor logo" class="tabela-logo"> FK Rudar Prijedor</td><td>7</td><td>8</td><td>18</td><td>29</td></tr>
+                            <tr><td>10</td><td><img src="images/sloga.png" alt="FK Sloga Doboj logo" class="tabela-logo"> FK Sloga Doboj</td><td>6</td><td>9</td><td>18</td><td>27</td></tr>
+                        </tbody>
+                    </table>
+                </section>
 
-        <article class="clan-card">
-            <img src="images/haris_barakovic.jpg" alt="Haris Baraković">
-            <h3>Haris Baraković</h3>
-            <p>HTML i struktura</p>
-        </article>
+<!-- Claude namjestio grid layout (nav lijevo, sadrzaj sredina, aside desno) -->
+<section class="main-layout container">
+            <nav class="side-nav" aria-label="Filteri po regiji">
+                <h3>Filteri</h3>
+                <ul>
+                    <li><a href="#" class="filter-btn active" data-category="all">Svi klubovi</a></li>
+                    <li><a href="#" class="filter-btn" data-category="fbih">Federacija BiH</a></li>
+                    <li><a href="#" class="filter-btn" data-category="rs">Republika Srpska</a></li>
+                    <li><a href="#" class="filter-btn" data-category="mostar">Mostar</a></li>
+                    <li><a href="#" class="filter-btn" data-category="sarajevo">Sarajevo</a></li>
+                </ul>
+            </nav>
 
-        <article class="clan-card">
-            <img src="images/hamza_jusufovic.png" alt="Hamza Jusufović">
-            <h3>Hamza Jusufović</h3>
-            <p>JavaScript</p>
-        </article>
-    </div>
-</section>
+            <section class="center-content">
+                <section class="section">
+                    <h2 class="section-title">Klubovi Premijer lige</h2>
+                    <section class="cards main-cards">
 
+                        <article class="card" data-category="rs">
+                            <img src="images/borac.png" alt="FK Borac Banja Luka logo">
+                            <section class="card-body">
+                                <h3>FK Borac</h3>
+                                <p>Lider Premijer lige BiH 2025/26. Klub iz Banja Luke osnovan 1926.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Borac_Banja_Luka" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
 
+                        <article class="card" data-category="sarajevo fbih">
+                            <img src="images/sarajevo.png" alt="FK Sarajevo logo">
+                            <section class="card-body">
+                                <h3>FK Sarajevo</h3>
+                                <p>Jedan od najvećih i najtrofejnijih klubova u BiH.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Sarajevo" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="sarajevo fbih">
+                            <img src="images/zeljeznicar.png" alt="FK Željezničar logo">
+                            <section class="card-body">
+                                <h3>FK Željezničar</h3>
+                                <p>Tradicionalni sarajevski klub sa bogatom historijom i navijačima.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_%C5%BDeljezni%C4%8Dar_Sarajevo" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="mostar fbih">
+                            <img src="images/velez.png" alt="FK Velež logo">
+                            <section class="card-body">
+                                <h3>FK Velež</h3>
+                                <p>Mostarski klub poznat po dugoj tradiciji i navijačkoj podršci.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Vele%C5%BE_Mostar" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="mostar fbih">
+                            <img src="images/zrinjski.png" alt="HŠK Zrinjski logo">
+                            <section class="card-body">
+                                <h3>HŠK Zrinjski</h3>
+                                <p>Klub iz Mostara sa zapaženim rezultatima u domaćem fudbalu.</p>
+                                <a href="https://bs.wikipedia.org/wiki/H%C5%A0K_Zrinjski_Mostar" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="fbih">
+                            <img src="images/siroki.png" alt="NK Široki Brijeg logo">
+                            <section class="card-body">
+                                <h3>NK Široki Brijeg</h3>
+                                <p>Klub iz Zapadne Hercegovine sa stabilnim nastupima u ligi.</p>
+                                <a href="https://bs.wikipedia.org/wiki/NK_%C5%A0iroki_Brijeg" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="rs">
+                            <img src="images/radnik.png" alt="NK Radnik Bijeljina logo">
+                            <section class="card-body">
+                                <h3>NK Radnik Bijeljina</h3>
+                                <p>Klub iz Bijeljine koji nastupa u domaćem Premijer liga takmičenju.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Radnik_Bijeljina" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="rs">
+                            <img src="images/sloga.png" alt="FK Sloga Doboj logo">
+                            <section class="card-body">
+                                <h3>FK Sloga Doboj</h3>
+                                <p>Klub iz Doboja koji predstavlja sjeverni dio Bosne i Hercegovine.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Sloga_Doboj" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="rs">
+                            <img src="images/prijedor.png" alt="FK Rudar Prijedor logo">
+                            <section class="card-body">
+                                <h3>FK Rudar Prijedor</h3>
+                                <p>Klub iz Prijedora sa dugom fudbalskom tradicijom u BiH.</p>
+                                <a href="https://bs.wikipedia.org/wiki/FK_Rudar_Prijedor" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                        <article class="card" data-category="fbih">
+                            <img src="images/posusje.png" alt="HŠK Posušje logo">
+                            <section class="card-body">
+                                <h3>HŠK Posušje</h3>
+                                <p>Klub iz Posušja koji nastupa u najvišem rangu bh. fudbala.</p>
+                                <a href="https://bs.wikipedia.org/wiki/H%C5%A0K_Posu%C5%A1je" target="_blank" rel="noopener">Više info</a>
+                            </section>
+                        </article>
+
+                    </section>
+                </section>
+                
+                <section class="section">
+                    <h2 class="section-title">Sezonska statistika</h2>
+                    <section class="stats-panel">
+                        <article class="stat-box">
+                            <span class="stat-number" id="matchCount">0</span>
+                            <span class="stat-label">Odigranih utakmica</span>
+                        </article>
+                        <article class="stat-box">
+                            <span class="stat-number" id="goalCount">0</span>
+                            <span class="stat-label">Postignutih golova</span>
+                        </article>
+                        <article class="stat-box">
+                            <span class="stat-number" id="clubCount">0</span>
+                            <span class="stat-label">Klubova u ligi</span>
+                        </article>
+                        <article class="stat-box countdown-box">
+                            <span class="stat-number" id="seasonTimer">--:--:--</span>
+                            <span class="stat-label">Countdown do kraja sezone</span>
+                        </article>
+                    </section>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Članovi grupe</h2>
+                    <section class="clanovi">
+                        <article class="clan-card">
+                            <img src="images/hamza_begic.jpg" alt="Hamza Begić">
+                            <h3>Hamza Begić</h3>
+                            <p>CSS i dizajn</p>
+                        </article>
+                        <article class="clan-card">
+                            <img src="images/haris_barakovic.jpg" alt="Haris Baraković">
+                            <h3>Haris Baraković</h3>
+                            <p>HTML i struktura</p>
+                        </article>
+                        <article class="clan-card">
+                            <img src="images/hamza_jusufovic.png" alt="Hamza Jusufović">
+                            <h3>Hamza Jusufović</h3>
+                            <p>JavaScript</p>
+                        </article>
+                    </section>
+                </section>
+
+            </section>
+            
+            
+<aside class="side-card video-card">
+    <h2 class="video-title-green">Osvajači Premijer lige BiH</h2>
+    <p>Pogledajte video pregled svih osvajača Premijer lige Bosne i Hercegovine.</p>
+
+    <!-- Chatgpt -->
+    <iframe
+        src="https://www.youtube.com/embed/ROw03Iirmmc"
+        title="Svi osvajači Premijer lige BiH"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+</aside>
     </main>
 
     <footer>
@@ -104,10 +241,75 @@
             <a href="#" id="IG">IG</a>
             <a href="#" id="YT">YT</a>
         </nav>
+        <p>Hamza Begić &bull; Haris Baraković &bull; Hamza Jusufović &mdash; Grupa 36</p>
         <p>© 2026 Fudbalska liga Bosne i Hercegovine. Sva prava zadržana.</p>
     </footer>
 
-    <script src="js/tptpskripte.js"></script>
+    <!-- LOGIN MODAL -->
+    <!-- claude napravio  html strukturu za modale -->
+    <section class="modal-overlay" id="loginModal">
+        <section class="modal-box">
+            <button type="button" class="close-modal">&times;</button>
+            <section class="loginbox">
+                <form id="loginForm" novalidate>
+                    <h2>Prijavite se</h2>
+                    <label class="inputbox" for="loginEmail">
+                        <input type="email" id="loginEmail" name="email" autocomplete="email">
+                        <span>Email</span>
+                    </label>
+                    <small class="field-error" id="loginEmailError"></small>
+                    <label class="inputbox" for="loginPassword">
+                        <input type="password" id="loginPassword" name="password" autocomplete="current-password">
+                        <span>Lozinka</span>
+                    </label>
+                    <small class="field-error" id="loginPasswordError"></small>
+                    <section class="remember-forgot">
+                        <label><input type="checkbox" id="rememberMe"> Zapamti me</label>
+                        <a href="#">Zaboravili ste lozinku?</a>
+                    </section>
+                    <button type="submit" id="loginSubmit">Prijava</button>
+                    <p id="loginMessage" class="form-message"></p>
+                    <p class="register-link">Nemate nalog? <a href="#" class="switch-to-register">Registrujte se</a></p>
+                </form>
+            </section>
+        </section>
+    </section>
 
+   
+    <section class="modal-overlay" id="registerModal">
+        <section class="modal-box">
+            <button type="button" class="close-modal">&times;</button>
+            <section class="loginbox">
+                <form id="registerForm" novalidate>
+                    <h2>Registracija</h2>
+                    <label class="inputbox" for="registerName">
+                        <input type="text" id="registerName" name="name" autocomplete="name">
+                        <span>Ime i prezime</span>
+                    </label>
+                    <small class="field-error" id="registerNameError"></small>
+                    <label class="inputbox" for="registerEmail">
+                        <input type="email" id="registerEmail" name="email" autocomplete="email">
+                        <span>Email</span>
+                    </label>
+                    <small class="field-error" id="registerEmailError"></small>
+                    <label class="inputbox" for="registerPassword">
+                        <input type="password" id="registerPassword" name="password" autocomplete="new-password">
+                        <span>Lozinka</span>
+                    </label>
+                    <small class="field-error" id="registerPasswordError"></small>
+                    <label class="inputbox" for="registerConfirm">
+                        <input type="password" id="registerConfirm" name="confirmPassword" autocomplete="new-password">
+                        <span>Potvrdite lozinku</span>
+                    </label>
+                    <small class="field-error" id="registerConfirmError"></small>
+                    <button type="submit" id="registerSubmit">Registracija</button>
+                    <p id="registerMessage" class="form-message"></p>
+                    <p class="register-link">Već imate nalog? <a href="#" class="switch-to-login">Prijava</a></p>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <script src="js/tptpskripte.js"></script>
 </body>
 </html>
